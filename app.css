@@ -1,0 +1,45 @@
+body {
+    padding: 20px;
+    text-align: center;
+    
+}
+
+header {
+    font-size: 50px;
+    text-decoration-color: blue;
+    text-align: center;
+    background-color: orange;
+    border: 25% solid orange;
+    
+
+}
+aside {
+    text-align: left;
+    font: caption;
+    font-style: italic;
+
+}
+
+a {
+    text-align: left;
+
+}
+h1{
+    text-align: center;
+}
+
+.signInForm{
+    text-align: center;
+    border: 2px solid black;
+    margin: 55px 15px;
+    padding: 40px 40px;
+    background-color: silver;
+
+}
+
+.cab{
+    border: 2px solid black;
+    border-radius: 50px;
+    background: silver;
+
+}

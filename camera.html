@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+
+    <link href="app.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Camera</title>
+</head>
+
+<header> <h1>Camera </h1> </header>
+
+<body>
+
+    <h3>save DoggZam! photos</h3>
+    <p id="save">
+        save the photo of dog that you have DoggZam from your mobile app. 
+        <br>
+    </p>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+        <input type="file" accept="image/*" id="file-input">
+        <script>
+          const fileInput = document.getElementById('file-input');
+        
+          fileInput.addEventListener('change', (e) => doSomethingWithFiles(e.target.files));
+        </script>
+
+
+
+
+<img id="output">
+<script>
+  const output = document.getElementById('output');
+
+  function doSomethingWithFiles(fileList) {
+    let file = null;
+
+    for (let i = 0; i < fileList.length; i++) {
+      if (fileList[i].type.match(/^image\//)) {
+        file = fileList[i];
+        break;
+      }
+    }
+
+    if (file !== null) {
+      output.src = URL.createObjectURL(file);
+    }
+  }
+</script>
+
+
+</body>
+
+<footer> <a id="picture of doggzam"><img src="image/DoggZamIcon.jpg"></a></footer>
+</html>
